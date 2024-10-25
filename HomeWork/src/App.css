@@ -1,0 +1,58 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: white;
+  background-image: url(./assets/img/bull-bear-trading-3840x2160-13849.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.cryptoCard_container {
+  max-width: 350px;
+  margin: 40px auto;
+  background-color: black;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card_header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card_content {
+  padding: 20px;
+}
+
+.info_item {
+  margin-bottom: 15px;
+  color: white;
+}
+
+.info_item span {
+  font-weight: bold;
+  color: white;
+  font-weight: bold;
+}
+
+.rank {
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-right: 10px;
+}
