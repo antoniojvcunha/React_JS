@@ -1,0 +1,24 @@
+body {
+  background-color: gray;
+}
+
+#mainContainer {
+  display: flex;
+  background-color: brown;
+  width: 1000px;
+  height: fit-content;
+}
+
+#listCharacters {
+  background-color: orange;
+  margin: 10%;
+  width: 500px;
+  height: fit-content;
+}
+
+#infoCharacters {
+  background-color: aquamarine;
+  margin: 10%;
+  width: 700px;
+  height: 400px;
+}

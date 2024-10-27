@@ -30,7 +30,7 @@ function CryptoInfo() {
         
 
     useEffect(() => {
-        fetchCrypto(cryptoId); // Fetch crypto data whenever cryptoId changes
+        fetchCrypto(cryptoId);
     }, [cryptoId]);
 
    

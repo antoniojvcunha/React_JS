@@ -22,6 +22,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  border: solid white;
 }
 
 .card_header {
@@ -46,7 +47,6 @@ body {
 .info_item span {
   font-weight: bold;
   color: white;
-  font-weight: bold;
 }
 
 .rank {
@@ -55,4 +55,12 @@ body {
   border-radius: 5px;
   font-size: 14px;
   margin-right: 10px;
+  font-weight: bold;
+}
+
+.input_container {
+  border: solid white;
+  background-color: black;
+  padding: 15px;
+  border-radius: 15px;
 }

@@ -1,18 +1,18 @@
-import MyList from "../../r5-moreListRendering/src/components/MyList"
+import MyList from "./components/MyList";
 import MyObjectList from "./components/MyObjectList";
 
 function App() {
   const osList = ["Windows", "MacOS", "Linux"];
-  const fruit = ["Apples", "Bananas", "Strawaberries", "Pears"];
+  const fruit = ["Apples", "Bananas", "Strawberries", "Pears"];
 
   return (
     <>
-      <h1>My Awesome </h1>
+      <h1>My Awesome App</h1>
       <MyList listValues={osList} />
-      <MyList listValues={fruit}/>
+      <MyList listValues={fruit} />
       <MyObjectList />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

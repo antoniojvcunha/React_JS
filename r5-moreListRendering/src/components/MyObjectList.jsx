@@ -1,41 +1,47 @@
+import Card from "./Card";
+
 function MyObjectList() {
-    const techRatings = [
-        {
-            languageName: "Javascript",
-            rating: 9
-        },
-        {
-            languageName: "React",
-            rating: 2
-        },
-        {
-            languageName: "Swift",
-            rating: 7
-        },
-        {
-            languageName: "Typescript",
-            rating: 8
-        },
-        {
-            languageName: "VueJS",
-            rating: 10
-        },
+  const techRatings = [
+    {
+      name: "Javascript",
+      rating: 9,
+    },
+    {
+      name: "React",
+      rating: 2,
+    },
+    {
+      name: "Swift",
+      rating: 7,
+    },
+    {
+      name: "Typescript",
+      rating: 8,
+    },
+    {
+      name: "VueJS",
+      rating: 10,
+    },
+  ];
 
-    ];
-
-    return (
-        <>
-            <ul>
-                {techRatings.map((value) => (
-                    <div>
-                        <h3>{value.languageName}</h3>
-                        <p>Rating: {value.rating}</p>
-                    </div>
-            ))}
-            </ul>
-        
-        </>
-    )
+  return (
+    <>
+      <p>{techRatings.length}</p>
+      <div className="cardContainer">
+        {techRatings.map((value) => (
+          <div className="card" key={value}>
+            <h3>{value.name}</h3>
+            <p>Rating: {value.rating}</p>
+          </div>
+        ))}
+      </div>
+      <br />
+      <div className="cardContainer">
+        {techRatings.map((value) => (
+          <Card name={value.name} rating={value.rating} key={value} />
+        ))}
+      </div>
+    </>
+  );
 }
-
 export default MyObjectList;
