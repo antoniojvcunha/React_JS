@@ -1,0 +1,29 @@
+#boxContainer {
+    color: black;
+    background-color: gainsboro;
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
+    gap: 15px;
+    border: solid black;
+    font-size:large;
+    
+}
+
+.boxSlidersContainer {
+    display: flex;
+    gap: 3px;
+}
+
+.boxValue {
+    padding: 5px;
+    border: solid 1px;
+    width: 30px;
+    height: fit-content;
+}
