@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Slider from './assets/components/Slider'
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
   const [rangeValue3, setRangeValue3] = useState(0);
   const [rangeValue4, setRangeValue4] = useState(0);
   const [rangeValue5, setRangeValue5] = useState(0);
+  const [sum, setSum] = useState(0);
 
   function handleSliderChange1(a) {
     setRangeValue1(a);
@@ -29,22 +30,25 @@ function App() {
     setRangeValue5(e);
   }
 
+useEffect(
+  function () {
+    const result = Number(rangeValue1) + 
+    Number(rangeValue2) + 
+    Number(rangeValue3) + 
+    Number(rangeValue4) + 
+    Number(rangeValue5);
 
-
-const totalValue = Number(rangeValue1) + 
-                   Number(rangeValue2) + 
-                   Number(rangeValue3) + 
-                   Number(rangeValue4) + 
-                   Number(rangeValue5);
-
-  
+    setSum(result);
+  },
+  [rangeValue1, rangeValue2, rangeValue3, rangeValue4, rangeValue5]
+);
 
   return (
 
     <>
 
       <div id='boxContainer'>
-        <div>Range Value: {totalValue}/500</div>
+        <div>Range Value: {sum}/500</div>
 
         <Slider sliderValue={rangeValue1} onSliderChange={handleSliderChange1} />
         <Slider sliderValue={rangeValue2} onSliderChange={handleSliderChange2} />
